@@ -1,8 +1,8 @@
 # Summary
 
-## 第一章
-
 * [欢迎](post/hello.md)
+
+## 第一章
 
 * [Django 入门](post/ch1/0.md)
 	* [Python 环境配置与 Django 安装](post/ch1/1.md)

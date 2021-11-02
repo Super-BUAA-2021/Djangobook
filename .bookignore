@@ -3,3 +3,4 @@ push.*
 .gitignore
 .bookignore
 .github/
+README.md
