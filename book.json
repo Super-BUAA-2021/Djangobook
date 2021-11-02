@@ -46,7 +46,7 @@
             "shortName": "marvolo"
         },
 		"insert-logo": {
-			"url": "/Djangobook/images/logo.jpg",
+			"url": "https://s3.bmp.ovh/imgs/2021/11/766ede33f4b96ab7.jpg",
 			"style": "background: none; max-height: 30px; min-height: 30px"
 		},
 		"hide-element": {

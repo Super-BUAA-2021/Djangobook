@@ -2,7 +2,7 @@
 
 * [欢迎](README.md)
 
-## 第一章
+## 基础篇
 
 * [Django 入门](post/ch1/0.md)
 	* [Python 环境配置与 Django 安装](post/ch1/1.md)
@@ -19,3 +19,5 @@
 * [Github 与自动部署](post/ch3/0.md)
 	* [Git 入门](post/ch3/1.md)
 	* [Github Action 实现自动部署](post/ch3/2.md)
+
+## 进阶篇
