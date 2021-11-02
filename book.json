@@ -18,7 +18,11 @@
         "prism",                
         "-highlight",
 		"changyan",
-		"disqus"
+		"disqus",
+		"pageview-count",
+		"hide-element",
+		"back-to-top-button",
+		"insert-logo"
     ],
 
 	"pluginsConfig": {
@@ -42,6 +46,13 @@
         },
 		"disqus": {
             "shortName": "marvolo"
+        },
+		"insert-logo": {
+			"url": "images/logo.jpg",
+			"style": "background: none; max-height: 30px; min-height: 30px"
+		},
+		"hide-element": {
+            "elements": [".gitbook-link"]
         }
 	}
 }
