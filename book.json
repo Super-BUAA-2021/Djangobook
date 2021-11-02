@@ -19,8 +19,7 @@
         "-highlight",
 		"hide-element",
 		"back-to-top-button",
-		"insert-logo",
-		"gitalk"
+		"insert-logo"
     ],
 
 	"pluginsConfig": {
@@ -41,9 +40,6 @@
             "sidebar" : {
                 "Home" : "http://marvolo.top"
             }
-        },
-		"disqus": {
-            "shortName": "marvolo"
         },
 		"insert-logo": {
 			"url": "https://s3.bmp.ovh/imgs/2021/11/766ede33f4b96ab7.jpg",
