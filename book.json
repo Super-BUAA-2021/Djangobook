@@ -1,0 +1,42 @@
+{
+    "title": "VUE BOOK",                   
+    "author": "Marvolo",                
+    "description": "Django 框架的使用教程",    
+    "plugins": [
+        "chapter-fold",         
+        "code",                 
+        "splitter",             
+        "-lunr",
+        "-search", 
+        "search-pro",           
+        "tbfed-pagefooter",     
+        "popup",                
+        "github",               
+        "theme-comscore",       
+        "multipart",            
+        "-livereload",
+        "prism",                
+        "-highlight"
+    ],
+
+	"pluginsConfig": {
+        "tbfed-pagefooter": {
+            "copyright":"Copyright &copy marvolo.top 2021",
+            "modify_label": "该文章修订时间：",
+            "modify_format": "YYYY-MM-DD HH:mm:ss"
+        },
+        "github": {
+            "url": "https://github.com/ZewanHuang/vue-gitbook"
+        },
+        "prism": {
+            "css": [
+                "prismjs/themes/prism.css"
+            ]
+        },
+        "links": {
+            "sidebar" : {
+                "Home" : "http://marvolo.top"
+            }
+        }
+	}
+}
