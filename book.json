@@ -16,7 +16,8 @@
         "multipart",            
         "-livereload",
         "prism",                
-        "-highlight"
+        "-highlight",
+		"changyan"
     ],
 
 	"pluginsConfig": {
@@ -37,6 +38,10 @@
             "sidebar" : {
                 "Home" : "http://marvolo.top"
             }
+        },
+		"changyan": {
+            "appid": "cyvJQ4U07",
+            "conf": "prod_58af3c0714ab9618f9cbe7a18c4705f1"
         }
 	}
 }
