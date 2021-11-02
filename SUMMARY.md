@@ -1,6 +1,6 @@
 # Summary
 
-* [欢迎](post/hello.md)
+* [欢迎](README.md)
 
 ## 第一章
 

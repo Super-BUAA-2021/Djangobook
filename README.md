@@ -1,5 +1,7 @@
-# Introduction
+# 关于该教程
 
-Hello, Gitbook!
+有时间填坑，咕咕咕咕咕咕。
 
-Hello, Github workflows!
+# 其他
+
+版权归 Marvolo 所有。未经授权不得转载。
