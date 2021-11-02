@@ -17,11 +17,10 @@
         "-livereload",
         "prism",                
         "-highlight",
-		"changyan",
-		"disqus",
 		"hide-element",
 		"back-to-top-button",
-		"insert-logo"
+		"insert-logo",
+		"page-treeview"
     ],
 
 	"pluginsConfig": {
@@ -47,7 +46,7 @@
             "shortName": "marvolo"
         },
 		"insert-logo": {
-			"url": "images/logo.jpg",
+			"url": "/images/logo.jpg",
 			"style": "background: none; max-height: 30px; min-height: 30px"
 		},
 		"hide-element": {
