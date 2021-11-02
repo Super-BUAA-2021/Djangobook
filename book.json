@@ -11,13 +11,14 @@
         "search-pro",           
         "tbfed-pagefooter",     
         "popup",                
-        "github",               
+        "github",
         "theme-comscore",       
         "multipart",            
         "-livereload",
         "prism",                
         "-highlight",
-		"changyan"
+		"changyan",
+		"disqus"
     ],
 
 	"pluginsConfig": {
@@ -39,9 +40,8 @@
                 "Home" : "http://marvolo.top"
             }
         },
-		"changyan": {
-            "appid": "cyvJQ4U07",
-            "conf": "prod_58af3c0714ab9618f9cbe7a18c4705f1"
+		"disqus": {
+            "shortName": "marvolo"
         }
 	}
 }
