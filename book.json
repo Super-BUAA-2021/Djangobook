@@ -20,7 +20,7 @@
 		"hide-element",
 		"back-to-top-button",
 		"insert-logo",
-		"disqus"
+		"gitalk"
     ],
 
 	"pluginsConfig": {
