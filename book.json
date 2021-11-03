@@ -1,6 +1,7 @@
 {
     "title": "Django Book",
-    "author": "Marvolo",                
+    "author": "Marvolo",      
+	"language": "zh-Hans",          
     "description": "Django 框架的简易入门教程",    
     "plugins": [
         "chapter-fold",         
