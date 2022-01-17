@@ -16,8 +16,8 @@
 	* [阿里云 数据库购买](post/ch2/3.md)
 	* [Datagrip 基本使用](post/ch2/4.md)
 
-* [Github 与自动部署](post/ch3/0.md)
+## 进阶篇
+
+* [Git 与自动部署](post/ch3/0.md)
 	* [Git 入门](post/ch3/1.md)
 	* [Github Action 实现自动部署](post/ch3/2.md)
-
-## 进阶篇
