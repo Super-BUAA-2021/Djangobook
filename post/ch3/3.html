@@ -1,0 +1,590 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-Hans" >
+    <head>
+        <title>Github Action 实现自动部署 · Django Book</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.0.0">
+        <meta name="author" content="Marvolo">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-multipart/multipart.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-insert-logo/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="2.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    欢迎
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">基础篇</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../ch1/0.html">
+            
+                <a href="../ch1/0.html">
+            
+                    
+                    第一章：Django 入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../ch1/1.html">
+            
+                <a href="../ch1/1.html">
+            
+                    
+                    Python 环境配置与 Django 安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../ch1/2.html">
+            
+                <a href="../ch1/2.html">
+            
+                    
+                    熟悉 Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../ch1/3.html">
+            
+                <a href="../ch1/3.html">
+            
+                    
+                    Postman 基本使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../ch1/4.html">
+            
+                <a href="../ch1/4.html">
+            
+                    
+                    Datagrip 基本使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../ch1/5.html">
+            
+                <a href="../ch1/5.html">
+            
+                    
+                    应用创建与数据库初始化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../ch1/6.html">
+            
+                <a href="../ch1/6.html">
+            
+                    
+                    URL 管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="../ch1/7.html">
+            
+                <a href="../ch1/7.html">
+            
+                    
+                    详解 views.py
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="../ch1/8.html">
+            
+                <a href="../ch1/8.html">
+            
+                    
+                    跨域，调试与部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="../ch1/9.html">
+            
+                <a href="../ch1/9.html">
+            
+                    
+                    其他
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.11" data-path="../ch2/0.html">
+            
+                <a href="../ch2/0.html">
+            
+                    
+                    第二章：登陆服务器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12" data-path="../ch2/1.html">
+            
+                <a href="../ch2/1.html">
+            
+                    
+                    腾讯云服务器购买与配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.13" data-path="../ch2/2.html">
+            
+                <a href="../ch2/2.html">
+            
+                    
+                    腾讯云数据库购买与配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">进阶篇</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="0.html">
+            
+                <a href="0.html">
+            
+                    
+                    第三章：Git 与自动部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="1.html">
+            
+                <a href="1.html">
+            
+                    
+                    Git 入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="2.html">
+            
+                <a href="2.html">
+            
+                    
+                    Github 介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.4" data-path="3.html">
+            
+                <a href="3.html">
+            
+                    
+                    Github Action 实现自动部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Github Action 实现自动部署</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="github-action-&#x5B9E;&#x73B0;&#x81EA;&#x52A8;&#x90E8;&#x7F72;">Github Action &#x5B9E;&#x73B0;&#x81EA;&#x52A8;&#x90E8;&#x7F72;</h1>
+<h2 id="&#x7B80;&#x4ECB;">&#x7B80;&#x4ECB;</h2>
+<p>Github &#x9488;&#x5BF9;&#x5F00;&#x53D1;&#x8005;&#x63D0;&#x4F9B;&#x4E86;&#x5F88;&#x591A;&#x514D;&#x8D39;&#x7684;&#x5B9E;&#x7528;&#x5DE5;&#x5177;&#xFF0C;Github Action &#x5C31;&#x662F;&#x5176;&#x4E2D;&#x4E4B;&#x4E00;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x5C06;&#x5176;&#x7406;&#x89E3;&#x4E3A;&#x4E00;&#x4E2A;&#x7279;&#x6B8A;&#x7684;&#x811A;&#x672C;&#xFF0C;&#x5728;&#x6EE1;&#x8DB3;&#x4E00;&#x5B9A;&#x6761;&#x4EF6;&#x7684;&#x65F6;&#x5019;&#x5B83;&#x5C31;&#x4F1A;&#x6267;&#x884C;&#xFF08;&#x4F8B;&#x5982;&#x68C0;&#x6D4B;&#x5230;&#x5BF9;&#x67D0;&#x4E00;&#x5206;&#x652F;&#x7684;push&#xFF0C;&#x5230;&#x8FBE;&#x4E86;&#x4E00;&#x5929;&#x7684;0&#x70B9;&#x7B49;&#xFF09;&#x3002;</p>
+<p>&#x5728;&#x7F51;&#x7AD9;&#x5F00;&#x53D1;&#x4E2D;&#xFF0C;&#x540E;&#x7AEF;&#x7ECF;&#x5E38;&#x9700;&#x8981;&#x628A;&#x521A;&#x5199;&#x5B8C;&#x7684;&#x5185;&#x5BB9;&#x540C;&#x6B65;&#x81F3;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x4F9B;&#x524D;&#x7AEF;&#x6D4B;&#x8BD5;&#xFF0C;&#x5982;&#x679C;&#x624B;&#x52A8;&#x90E8;&#x7F72;&#xFF0C;&#x5219;&#x9700;&#x8981;&#x5148;&#x8FDE;&#x63A5;&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x7136;&#x540E;<code>git pull</code>&#xFF0C;&#x518D;&#x5C06;&#x540E;&#x7AEF;&#x8FD0;&#x884C;&#x8D77;&#x6765;&#x3002;&#x4E00;&#x6B21;&#x4E24;&#x6B21;&#x8FD8;&#x597D;&#xFF0C;&#x591A;&#x4E86;&#x4E4B;&#x540E;&#x4F1A;&#x5F88;&#x6D6A;&#x8D39;&#x65F6;&#x95F4;&#x4E14;&#x6BD4;&#x8F83;&#x67AF;&#x71E5;&#x3002;&#x9002;&#x5F53;&#x4F7F;&#x7528; Github Action &#x5C31;&#x53EF;&#x4EE5;&#x628A;&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#x81EA;&#x52A8;&#x5316;&#xFF0C;&#x4E0B;&#x9762;&#x5C06;&#x4ECB;&#x7ECD;&#x5982;&#x4F55;&#x5B9E;&#x73B0;&#x81EA;&#x52A8;&#x90E8;&#x7F72;&#x3002; </p>
+<h2 id="&#x51C6;&#x5907;&#x5DE5;&#x4F5C;">&#x51C6;&#x5907;&#x5DE5;&#x4F5C;</h2>
+<p>&#x5728;&#x4E00;&#x4E2A;<code>git</code>&#x9879;&#x76EE;&#x4E2D;&#xFF0C;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;<code>.github</code>&#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x518D;&#x5728;&#x5176;&#x4E2D;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;<code>workflows</code>&#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x7136;&#x540E;&#x5728;&#x91CC;&#x9762;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;<code>main.yml</code>&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x5C06;&#x4E0B;&#x9762;&#x7684;&#x5185;&#x5BB9;&#x7C98;&#x8D34;&#x8FDB;&#x53BB;&#xFF1A;</p>
+<pre class="language-"><code class="lang-yml">name: Django_deploy
+
+on:
+  push:
+    branches: [master]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: pull and reload on Aliyun
+        run: sshpass -p ${{secrets.ECS_PASSWORD}} ssh -o StrictHostKeyChecking=no root@${{secrets.ECS_IP}} &quot;cd ~/academic; python kill.py; git pull --force; git checkout master; python run.py;&quot;
+</code></pre>
+<p><strong>&#x6B64;&#x65F6;&#x5148;&#x4E0D;&#x8981;&#x6025;&#x7740; commit</strong>&#xFF0C;&#x8FDB;&#x5165;Github &#x91CC;&#x5BF9;&#x5E94;&#x7684;&#x4ED3;&#x5E93;&#x9875;&#x9762;&#xFF0C;&#x70B9;&#x51FB;<code>Settings-&gt;Secrets</code>&#xFF08;&#x5982;&#x679C;&#x627E;&#x4E0D;&#x5230;Secrets&#xFF0C;&#x53EF;&#x80FD;&#x662F;&#x6743;&#x9650;&#x4E0D;&#x591F;&#xFF0C;&#x53EF;&#x4EE5;&#x8BA9;&#x4ED3;&#x5E93;&#x62E5;&#x6709;&#x8005;&#x6765;&#x64CD;&#x4F5C;&#xFF09;&#x3002;&#x8FD9;&#x91CC;&#x5B58;&#x653E;&#x7684;&#x662F;&#x8FD9;&#x4E2A;&#x4ED3;&#x5E93;&#x4E2D;&#x7684;&#x6240;&#x9700;&#x8981;&#x7684;&#x4E0D;&#x5BF9;&#x5916;&#x516C;&#x5F00;&#x7684;&#x5E38;&#x91CF;&#x3002;&#x70B9;&#x51FB;&#x521B;&#x5EFA;&#x65B0; Secrets&#xFF1A;</p>
+<p><img src="https://raw.githubusercontent.com/zhtjtcz/MyImg/master/img/202201192055029.png" alt="image-20220119205528393"></p>
+<p>&#x7136;&#x540E;&#x5206;&#x522B;&#x586B;&#x5165;&#x5E38;&#x91CF;&#x540D;&#x548C;&#x503C;&#xFF1A;</p>
+<p><img src="https://raw.githubusercontent.com/zhtjtcz/MyImg/master/img/202201192056913.png" alt="image-20220119205610854"></p>
+<p>&#x4E0A;&#x9762;&#x7684;<code>yml</code>&#x6587;&#x4EF6;&#x7528;&#x5230;&#x4E86;&#x4E24;&#x4E2A;&#x5E38;&#x91CF;&#xFF0C;&#x5206;&#x522B;&#x662F;<code>ECS_PASSWORD</code>&#x4E0E;<code>ECS_IP</code>&#x3002;&#x524D;&#x8005;&#x662F;&#x4F60;&#x670D;&#x52A1;&#x5668;&#x7684;&#x5BC6;&#x7801;&#xFF0C;&#x540E;&#x8005;&#x662F;&#x670D;&#x52A1;&#x5668;&#x7684; IP&#x3002;&#x5C06;&#x8FD9;&#x4E24;&#x4E2A;&#x5E38;&#x91CF;&#x521B;&#x5EFA;&#x597D;&#x540E;&#xFF0C;&#x6548;&#x679C;&#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;&#xFF1A;</p>
+<p><img src="https://raw.githubusercontent.com/zhtjtcz/MyImg/master/img/202201192057718.png" alt="image-20220119205726652"></p>
+<p>&#x8FD9;&#x4E2A;&#x65F6;&#x5019;&#x5C31;&#x4E0D;&#x80FD;&#x518D;&#x770B;&#x5230;&#x8FD9;&#x4E2A;&#x5E38;&#x91CF;&#x7684;&#x503C;&#x4E86;&#xFF0C;&#x53EA;&#x80FD;&#x4FEE;&#x6539;&#x6216;&#x8005;&#x5220;&#x9664;&#x3002;&#x4E4B;&#x6240;&#x4EE5;&#x8FD9;&#x4E48;&#x64CD;&#x4F5C;&#xFF0C;&#x662F;&#x8003;&#x8651;&#x5230;&#x4E4B;&#x540E;&#x4ED3;&#x5E93;&#x53EF;&#x80FD;&#x6539;&#x6210; public&#xFF0C;&#x4E3A;&#x4E86;&#x907F;&#x514D;&#x670D;&#x52A1;&#x5668;&#x7684;&#x4FE1;&#x606F;&#x6CC4;&#x9732;&#xFF0C;&#x4E8E;&#x662F;&#x4F7F;&#x7528;&#x4E86; Secrets &#x6765;&#x505A;&#x4E00;&#x4E2A;&#x5B89;&#x5168;&#x9632;&#x62A4;&#x3002;</p>
+<p>&#x811A;&#x672C;&#x4E2D;&#x7684;&#x8FD9;&#x51E0;&#x53E5;&#x6BD4;&#x8F83;&#x5173;&#x952E;&#xFF1A;</p>
+<pre class="language-"><code class="lang-yml">on:
+  push:
+    branches: [master]
+</code></pre>
+<p>&#x5B83;&#x6307;&#x660E;&#x4E86;&#x811A;&#x672C;&#x8FD0;&#x884C;&#x7684;&#x65F6;&#x673A;&#xFF0C;&#x662F;&#x5728;&#x68C0;&#x6D4B;&#x5230; master &#x5206;&#x652F;&#x4E0A;&#x6709;&#x65B0;&#x7684;push&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5C31;&#x4F1A;&#x6267;&#x884C;&#x811A;&#x672C;&#x3002;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x5B9E;&#x9645;&#x60C5;&#x51B5;&#x4FEE;&#x6539;&#x5206;&#x652F;&#x540D;&#x79F0;&#x3002;</p>
+<p>&#x8FD9;&#x91CC;&#x7740;&#x91CD;&#x5BF9;&#x8FD9;&#x53E5;&#x8BDD;&#x505A;&#x4E00;&#x4E2A;&#x89E3;&#x91CA;&#xFF1A;</p>
+<pre class="language-"><code class="lang-yml">run: sshpass -p $ ssh -o StrictHostKeyChecking=no root@$ &quot;cd ~/academic; python kill.py; git pull --force; git checkout master; python run.py;&quot;
+</code></pre>
+<p><code>run</code>&#x5C31;&#x662F;&#x6267;&#x884C;&#x540E;&#x9762;&#x7684;&#x5185;&#x5BB9;&#x3002;&#x9996;&#x5148;&#x4F7F;&#x7528; sshpass &#x8FDE;&#x63A5;&#x4E0A;&#x670D;&#x52A1;&#x5668;&#xFF0C;IP &#x4E0E;&#x5BC6;&#x7801;&#x5728; Secrets &#x4E2D;&#x8BBE;&#x7F6E;&#x597D;&#x4E86;&#x3002;&#x7136;&#x540E;&#x5728;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x6267;&#x884C;&#x5F15;&#x53F7;&#x4E2D;&#x7684;&#x5185;&#x5BB9;&#x3002;&#x6253;&#x5F00;&#x9879;&#x76EE;&#x6587;&#x4EF6;&#x5939;&#xFF08;&#x8FD9;&#x91CC;&#x53EF;&#x4EE5;&#x81EA;&#x884C;&#x4FEE;&#x6539;&#xFF0C;<strong>&#x63A8;&#x8350;&#x4F7F;&#x7528;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;</strong>&#x907F;&#x514D;&#x51FA;&#x73B0;&#x95EE;&#x9898;&#xFF09;&#xFF0C;&#x6267;&#x884C;&#x811A;&#x672C;&#x6740;&#x6B7B;&#x4E0A;&#x6B21;&#x8FD0;&#x884C;&#x7684;&#x540E;&#x7AEF;&#x9879;&#x76EE;&#xFF0C;&#x7136;&#x540E;&#x901A;&#x8FC7;<code>git pull --force</code>&#x5F3A;&#x884C;&#x66F4;&#x65B0;&#xFF08;&#x52A0;<code>--force</code>&#x662F;&#x4E3A;&#x4E86;&#x907F;&#x514D;&#x51B2;&#x7A81;&#x5BFC;&#x81F4;&#x62C9;&#x53D6;&#x5931;&#x8D25;&#xFF09;&#xFF0C;&#x518D;&#x6267;&#x884C;&#x8FD0;&#x884C;&#x540E;&#x7AEF;&#x7684;&#x811A;&#x672C;&#x3002;&#x5404;&#x4E2A;&#x8BED;&#x53E5;&#x4E4B;&#x95F4;&#x4F7F;&#x7528;&#x5206;&#x53F7;&#x5206;&#x9694;&#x3002;</p>
+<p>&#x8BBE;&#x7F6E;&#x5B8C;&#x6BD5;&#x540E;&#xFF0C;Action &#x811A;&#x672C;&#x5C31;&#x53EF;&#x4EE5;&#x6B63;&#x5E38;&#x8FD0;&#x4F5C;&#x4E86;&#xFF0C;&#x8FD9;&#x65F6;&#x5C31;&#x53EF;&#x4EE5; commit &#x89C2;&#x5BDF;&#x6548;&#x679C;&#x4E86;&#x3002;</p>
+<h2 id="&#x4F7F;&#x7528;">&#x4F7F;&#x7528;</h2>
+<p>&#x5728;&#x811A;&#x672C;&#x6267;&#x884C;&#x5B8C;&#x6BD5;&#xFF0C;&#x6B63;&#x5E38;&#x7ED3;&#x675F;&#x540E;&#xFF0C;&#x4ED3;&#x5E93;&#x9875;&#x9762;&#x7684;&#x8FD9;&#x4E2A;&#x5730;&#x65B9;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x4E00;&#x4E2A;&#x84DD;&#x8272;&#x7684;&#x5BF9;&#x53F7;&#xFF08;Github &#x4E3B;&#x9898;&#x4E0D;&#x540C;&#xFF0C;&#x989C;&#x8272;&#x53EF;&#x80FD;&#x4E0D;&#x540C;&#xFF0C;&#x4E0D;&#x7528;&#x5728;&#x610F;&#x8FD9;&#x4E9B;&#x7EC6;&#x8282;&#xFF09;&#xFF1A;</p>
+<p><img src="https://raw.githubusercontent.com/zhtjtcz/MyImg/master/img/202201192104329.png" alt="image-20220119210405265"></p>
+<p>&#x5982;&#x679C;&#x811A;&#x672C;&#x8FD8;&#x5728;&#x6267;&#x884C;&#xFF0C;&#x770B;&#x5230;&#x7684;&#x662F;&#x9EC4;&#x8272;&#x7684;&#x5C0F;&#x70B9;&#x3002;&#x5982;&#x679C;&#x811A;&#x672C;&#x6267;&#x884C;&#x8FC7;&#x7A0B;&#x4E2D;&#x53D1;&#x751F;&#x4E86;&#x5F02;&#x5E38;&#xFF0C;&#x5219;&#x663E;&#x793A;&#x4E00;&#x4E2A;&#x7EA2;&#x53C9;&#x3002;&#x70B9;&#x51FB;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x8BE6;&#x7EC6;&#x7684;&#x6267;&#x884C;&#x60C5;&#x51B5;&#xFF0C;&#x4E0B;&#x56FE;&#x4E2D;&#x662F;&#x4E00;&#x4E2A;&#x6B63;&#x786E;&#x6267;&#x884C;&#x7684;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<p><img src="https://raw.githubusercontent.com/zhtjtcz/MyImg/master/img/202201192104086.png" alt="image-20220119210458023"></p>
+<p>&#x6267;&#x884C;&#x5931;&#x8D25;&#x7684;&#x60C5;&#x51B5;&#xFF1A;</p>
+<p><img src="https://raw.githubusercontent.com/zhtjtcz/MyImg/master/img/202201192105407.png" alt="image-20220119210521342"></p>
+<p>&#x53EF;&#x4EE5;&#x89C2;&#x5BDF;&#x5230;&#xFF0C;&#x6BCF;&#x4E2A; Action &#x6267;&#x884C;&#x5B8C;&#x6BD5;&#x540E;&#x90FD;&#x4F1A;&#x663E;&#x793A;&#x4E00;&#x4E2A;&#x65F6;&#x95F4;&#xFF1A;</p>
+<p><img src="https://raw.githubusercontent.com/zhtjtcz/MyImg/master/img/202201192109617.png" alt="image-20220119210920549"></p>
+<p>&#x8FD9;&#x662F;&#x811A;&#x672C;&#x7684;&#x6267;&#x884C;&#x7528;&#x65F6;&#x3002;Github &#x9488;&#x5BF9;&#x4E00;&#x822C;&#x7684;&#x7528;&#x6237;&#xFF0C;&#x63D0;&#x4F9B;&#x4E86;&#x6BCF;&#x6708; 2000 &#x5206;&#x949F;&#x7684;<strong>&#x79C1;&#x6709;</strong>&#x4ED3;&#x5E93; Action&#x65F6;&#x957F;&#xFF08;&#x516C;&#x5F00;&#x7684;&#x4ED3;&#x5E93;&#x65F6;&#x957F;&#x4E0D;&#x9650;&#xFF09;&#x3002;&#x5982;&#x679C;&#x8D85;&#x8FC7;&#x4E86;&#x8FD9;&#x4E2A;&#x989D;&#x5EA6;&#xFF0C;&#x5C31;&#x8981;&#x4ED8;&#x8D39;&#x3002;&#x5982;&#x679C;&#x5B8C;&#x6210;&#x4E86;&#x5B66;&#x751F;&#x8BA4;&#x8BC1;&#xFF0C;&#x5219;&#x662F; 3000 &#x5206;&#x949F;/&#x6708;&#x3002;&#x9879;&#x76EE;&#x4ED3;&#x5E93;&#x5728;&#x5F00;&#x53D1;&#x8FC7;&#x7A0B;&#x4E2D;&#x4E00;&#x822C;&#x90FD;&#x662F;<code>private</code>&#x72B6;&#x6001;&#xFF0C;&#x6240;&#x4EE5;&#x4ED3;&#x5E93;&#x62E5;&#x6709;&#x8005;&#x9700;&#x8981;&#x7559;&#x610F;&#x4E0B;&#x81EA;&#x5DF1;&#x7684;&#x5269;&#x4F59;&#x989D;&#x5EA6;&#x3002;&#x5728;&#x4E2A;&#x4EBA;&#x8BBE;&#x7F6E;&#x9875;&#x7684;<code>Billing</code>&#x4E0B;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#xFF1A;</p>
+<p><img src="https://raw.githubusercontent.com/zhtjtcz/MyImg/master/img/202201192111660.png" alt="image-20220119211142584"></p>
+<p><img src="https://raw.githubusercontent.com/zhtjtcz/MyImg/master/img/202201192112441.png" alt="image-20220119211200393"></p>
+<p>&#x5982;&#x679C;&#x4E24;&#x6B21;&#x63D0;&#x4EA4;&#x8F83;&#x4E3A;&#x63A5;&#x8FD1;&#xFF0C;&#x5BFC;&#x81F4;&#x540C;&#x65F6;&#x6709;&#x4E24;&#x4E2A;&#x811A;&#x672C;&#x5728;&#x6267;&#x884C;&#xFF0C;&#x5C31;&#x53EF;&#x80FD;&#x4F1A;&#x5BFC;&#x81F4;&#x5361;&#x6B7B;&#x7684;&#x60C5;&#x51B5;&#x51FA;&#x73B0;&#xFF0C;&#x811A;&#x672C;&#x4E00;&#x76F4;&#x6267;&#x884C;&#x4E0D;&#x5B8C;&#xFF0C;&#x75AF;&#x72C2;&#x6D88;&#x8017; Action &#x989D;&#x5EA6;&#x3002;&#x6240;&#x4EE5;&#x4E00;&#x5B9A;&#x8981;&#x53CA;&#x65F6;&#x7559;&#x610F;&#x4ED3;&#x5E93;&#x4E2D;&#x7684; Action &#x6267;&#x884C;&#x60C5;&#x51B5;&#xFF0C;&#x53D1;&#x73B0;&#x5F02;&#x5E38;&#x540E;&#x624B;&#x52A8;&#x505C;&#x6B62;&#xFF0C;<del>&#x907F;&#x514D;&#x5E26;&#x6765;&#x8D22;&#x4EA7;&#x635F;&#x5931;</del>&#x3002;</p>
+<p>&#x5B9E;&#x6D4B;&#x5373;&#x4F7F;&#x662F;&#x975E;&#x5E38;&#x9AD8;&#x5F3A;&#x5EA6;&#x7684;&#x5F00;&#x53D1;&#xFF0C;&#x4E00;&#x4E2A;&#x6708;&#x7684;&#x65F6;&#x957F;&#x6D88;&#x8017;&#x4E5F;&#x5728; 500 &#x5206;&#x949F;&#x4EE5;&#x4E0B;&#xFF0C;&#x6240;&#x4EE5;&#x53EF;&#x4EE5;&#x653E;&#x5FC3;&#x4F7F;&#xFF08;bai&#xFF09;&#x7528;&#xFF08;piao&#xFF09;&#x3002;</p>
+<h2 id="&#x603B;&#x7ED3;">&#x603B;&#x7ED3;</h2>
+<p>&#x5728;&#x5B8C;&#x6210;&#x4E86; Action &#x7684;&#x914D;&#x7F6E;&#x4E4B;&#x540E;&#xFF0C;&#x540E;&#x7AEF;&#x5F00;&#x53D1;&#x5DE5;&#x4F5C;&#x5C31;&#x8F7B;&#x677E;&#x4E86;&#x5F88;&#x591A;&#xFF1A;&#x5982;&#x679C;&#x524D;&#x7AEF;&#x53D1;&#x73B0;&#x540E;&#x7AEF;&#x6709;bug&#xFF0C;&#x540E;&#x7AEF;&#x4FEE;&#x590D;&#x5B8C;&#x6BD5;&#x5E76; commit &#x540E;&#xFF0C;&#x81EA;&#x52A8;&#x89E6;&#x53D1; Action &#x8FDB;&#x884C;&#x670D;&#x52A1;&#x5668;&#x90E8;&#x7F72;&#xFF0C;&#x5927;&#x7EA6;&#x534A;&#x5206;&#x949F;&#x540E;&#xFF0C;&#x524D;&#x7AEF;&#x5373;&#x53EF;&#x68C0;&#x6D4B;&#x5230;&#x6700;&#x65B0;&#x8FD0;&#x884C;&#x7684;&#x540E;&#x7AEF;&#x3002;&#x6574;&#x4E2A;&#x8FC7;&#x7A0B;&#x4E0D;&#x518D;&#x9700;&#x8981;&#x8FDE;&#x63A5;&#x670D;&#x52A1;&#x5668;&#x8FDB;&#x884C;&#x624B;&#x52A8;&#x66F4;&#x65B0;&#x4E0E;&#x90E8;&#x7F72;&#xFF0C;&#x975E;&#x5E38;&#x7684;&#x65B9;&#x4FBF;&#x3002;</p>
+<h2 id="&#x8865;&#x5145;">&#x8865;&#x5145;</h2>
+<p>Github Action &#x811A;&#x672C;&#x662F;&#x6709;&#x4E00;&#x4E2A;&#x660E;&#x786E;&#x7684;&#x7ED3;&#x6784;&#x89C4;&#x8303;&#x4E0E;&#x8BED;&#x6CD5;&#x89C4;&#x5219;&#x7684;&#xFF0C;&#x8FD9;&#x91CC;&#x53EA;&#x662F;&#x7ED9;&#x51FA;&#x4E86;&#x4E00;&#x4E2A;&#x975E;&#x5E38;&#x7B80;&#x5355;&#x7684;&#x4F7F;&#x7528;&#x4F8B;&#x5B50;&#x3002;&#x5982;&#x679C;&#x60F3;&#x5BF9;&#x5176;&#x6DF1;&#x5165;&#x4E86;&#x89E3;&#x6765;&#x81EA;&#x5DF1;&#x8FDB;&#x884C;&#x9B54;&#x6539;&#xFF0C;&#x53EF;&#x4EE5;&#x9605;&#x8BFB;<a href="https://www.ruanyifeng.com/blog/2019/09/getting-started-with-github-actions.html" _target="blank">&#x8FD9;&#x4E2A;</a>&#x6559;&#x7A0B;&#x3002;</p>
+<p><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css"></p>
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<div id="gitalk-container"></div>
+<script>
+var gitalk = new Gitalk({
+  "clientID": "0cfd2f1628066d69c6e3",
+  "clientSecret": "303031b18a4deabc1164de81f2d78273c18f8415",
+  "repo": "Djangobook",
+  "owner": "Super-BUAA-2021",
+  "admin": ["zhtjtcz"],
+  "id": location.pathname,
+  "distractionFreeMode": false  
+});
+gitalk.render("gitalk-container");
+</script>
+
+
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; Marvolo 2021 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x7AE0;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2022-02-22 12:01:22
+</span></footer>
+<script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="2.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Github 介绍">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Github Action 实现自动部署","level":"3.4","depth":1,"previous":{"title":"Github 介绍","level":"3.3","depth":1,"path":"post/ch3/2.md","ref":"post/ch3/2.md","articles":[]},"dir":"ltr"},"config":{"plugins":["chapter-fold","code","splitter","-lunr","-search","search-pro","tbfed-pagefooter","popup","github","theme-comscore","multipart","-livereload","prism","-highlight","hide-element","back-to-top-button","insert-logo"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy Marvolo 2021","modify_label":"该文章修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"prism":{"css":["prismjs/themes/prism.css"]},"github":{"url":"https://github.com/zhtjtcz/Djangobook"},"splitter":{},"search-pro":{},"popup":{},"multipart":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-comscore":{},"back-to-top-button":{},"links":{"sidebar":{"Home":"http://marvolo.top"}},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"url":"https://s3.bmp.ovh/imgs/2021/11/766ede33f4b96ab7.jpg","style":"background: none; max-height: 30px; min-height: 30px"}},"theme":"default","author":"Marvolo","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Django Book","language":"zh-Hans","gitbook":"*","description":"Django 框架的简易入门教程"},"file":{"path":"post/ch3/3.md","mtime":"2022-02-22T12:01:22.357Z","type":"markdown"},"gitbook":{"version":"3.0.0","time":"2022-02-22T12:02:08.615Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-insert-logo/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/buttons.js"></script>
+        
+    
+
+    </body>
+</html>
+
